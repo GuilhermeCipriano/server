@@ -2,8 +2,7 @@ package com.cipriano.utils;
 
 
 import com.cipriano.Main;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
 
 public class POSEntryModes {
 
@@ -25,16 +24,15 @@ public class POSEntryModes {
     public static final int SECURITY_METHOD_PIN_VERIFIED_BY_OFFLINE_PIN_PAD = 3;
     public static final int SECURITY_METHOD_NO_PIN_VERIFICATION = 4;
 
-    private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
     public static void getEntryModeDescription(int entryMode) {
         int panEntryMode = getPanEntryMode(entryMode);
         int pinEntryCapability = getPinEntryCapability(entryMode);
         int securityMethod = getSecurityMethod(entryMode);
-
-        LOGGER.info("PAN Entry Mode: {}", getPanEntryModeDescription(panEntryMode));
-        LOGGER.info("PIN Entry Capability: {}", getPinEntryCapabilityDescription(pinEntryCapability));
-        LOGGER.info("Security Method: {}", getSecurityMethodDescription(securityMethod));
+//
+//        LOGGER.info("PAN Entry Mode: {}", getPanEntryModeDescription(panEntryMode));
+//        LOGGER.info("PIN Entry Capability: {}", getPinEntryCapabilityDescription(pinEntryCapability));
+//        LOGGER.info("Security Method: {}", getSecurityMethodDescription(securityMethod));
     }
 
     // Helper methods to get descriptions (optional)

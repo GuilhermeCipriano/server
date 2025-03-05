@@ -1,6 +1,4 @@
-package com.cipriano;
-
-import com.cipriano.request.PaymentRequest;
+package com.cipriano.integration;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -43,9 +41,5 @@ public class ServerConnection {
         if (socket != null && !socket.isClosed()) {
             socket.close();
         }
-    }
-
-    public PaymentRequest processISOMessage(byte[] isoMessageBytes) {
-        return null;
     }
 }

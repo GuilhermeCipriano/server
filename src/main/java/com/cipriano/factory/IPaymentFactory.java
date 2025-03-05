@@ -5,5 +5,5 @@ import org.jpos.iso.ISOException;
 
 public interface IPaymentFactory {
 
-    byte[] createPayment(PaymentRequest payment) throws ISOException;
+//    byte[] createPayment(PaymentRequest payment) throws ISOException;
 }
